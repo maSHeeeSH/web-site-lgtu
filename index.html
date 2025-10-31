@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Объявления</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          Объявления
+        </a>
+        <nav class="nav">
+          <a href="#">Главная</a>
+          <a href="#">О нас</a>
+          <a href="#">Правила</a>
+        </nav>
+        <div class="auth-buttons">
+          <button>Вход</button>
+          <button>Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="main">
+    <div class="container">
+      <h1 class="section-title">Новые объявления</h1>
+
+      <!-- КНОПКА ДОБАВИТЬ -->
+      <button class="add-btn" onclick="document.getElementById('addDialog').showModal()">
+        + Добавить объявление
+      </button>
+
+      <!-- СЕТКА ОБЪЯВЛЕНИЙ -->
+      <div class="ads-grid">
+        <!-- Товар 1 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/red-apple.jpg" alt="Красное яблоко"></div>
+          <div class="ad-info">
+            <div class="ad-title">Красное яблоко</div>
+            <div class="ad-price">50 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 2 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/design-book.jpg" alt="Книга по дизайну"></div>
+          <div class="ad-info">
+            <div class="ad-title">Книга по дизайну</div>
+            <div class="ad-price">500 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 3 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/samsung-phone.jpg" alt="Смартфон Samsung"></div>
+          <div class="ad-info">
+            <div class="ad-title">Смартфон Samsung</div>
+            <div class="ad-price">15 000 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 4 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/nike-shoes.jpg" alt="Кроссовки Nike"></div>
+          <div class="ad-info">
+            <div class="ad-title">Кроссовки Nike</div>
+            <div class="ad-price">4 000 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 5 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/white-shirt.jpg" alt="Белая футболка"></div>
+          <div class="ad-info">
+            <div class="ad-title">Белая футболка</div>
+            <div class="ad-price">800 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 6 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/dell-laptop.jpg" alt="Ноутбук Dell"></div>
+          <div class="ad-info">
+            <div class="ad-title">Ноутбук Dell</div>
+            <div class="ad-price">30 000 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 7 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/school-bag.jpg" alt="Рюкзак для школы"></div>
+          <div class="ad-info">
+            <div class="ad-title">Рюкзак для школы</div>
+            <div class="ad-price">1 200 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 8 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/casio-watch.jpg" alt="Наручные часы Casio"></div>
+          <div class="ad-info">
+            <div class="ad-title">Наручные часы Casio</div>
+            <div class="ad-price">2 500 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 9 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/sunglasses.jpg" alt="Солнечные очки"></div>
+          <div class="ad-info">
+            <div class="ad-title">Солнечные очки</div>
+            <div class="ad-price">1 000 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 10 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/fedora-hat.jpg" alt="Шляпа федора"></div>
+          <div class="ad-info">
+            <div class="ad-title">Шляпа федора</div>
+            <div class="ad-price">900 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 11 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/banana.jpg" alt="Банан"></div>
+          <div class="ad-info">
+            <div class="ad-title">Банан</div>
+            <div class="ad-price">30 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 12 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/coffee-mug.jpg" alt="Кофейная кружка"></div>
+          <div class="ad-info">
+            <div class="ad-title">Кофейная кружка</div>
+            <div class="ad-price">300 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 13 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/notebook.jpg" alt="Блокнот"></div>
+          <div class="ad-info">
+            <div class="ad-title">Блокнот</div>
+            <div class="ad-price">150 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 14 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/parker-pen.jpg" alt="Ручка Parker"></div>
+          <div class="ad-info">
+            <div class="ad-title">Ручка Parker</div>
+            <div class="ad-price">400 ₽</div>
+          </div>
+        </div>
+        
+        <!-- Товар 15 -->
+        <div class="ad-card">
+          <div class="ad-img"><img src="./images/usb-flash.jpg" alt="USB-флешка 32GB"></div>
+          <div class="ad-info">
+            <div class="ad-title">USB-флешка 32GB</div>
+            <div class="ad-price">600 ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button>Показать ещё</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <dialog id="addDialog">
+    <h2 class="dialog-title">Добавить объявление</h2>
+    <form method="dialog">
+      <div class="form-group">
+        <label for="title">Заголовок *</label>
+        <input type="text" id="title" required placeholder="Например: iPhone 13">
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Фото</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+
+      <div class="form-group">
+        <label for="desc">Описание</label>
+        <textarea id="desc" rows="4" placeholder="Подробности..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Цена *</label>
+        <input type="number" id="price" required min="0" placeholder="0">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email (для откликов) *</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+      </div>
+
+      <button type="submit" class="submit-btn">Опубликовать</button>
+      <button type="button" class="submit-btn close-btn" onclick="document.getElementById('addDialog').close()">
+        Отмена
+      </button>
+    </form>
+  </dialog>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>info@gmail.com</div>
+        <div class="footer-links">
+          <a href="#">Информация о разработчике</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
